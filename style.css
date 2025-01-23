@@ -12,6 +12,7 @@
 .container{
 	max-width: 1319px;
 	margin: 0 auto;
+	width: 100%;
 }
 .xz{
 	color: white;
@@ -25,9 +26,10 @@ header ul{
 
 }
 header{
-	padding-top: 20px;
+	padding: 20px;
 	display: flex;
 	justify-content: space-between;
+
 }
 .xz a{
 	color: #ffffff;
@@ -42,32 +44,34 @@ header{
 	background-color: transparent;
 }
 .came{
-background-image: url(Images/Image.png);
-    width: 570px;
-    height: 530px;
-    background-size: 601px;
+	background-image: url(Images/Image.png);
+    max-width: 570px;
+    min-height: 300px;
+    background-size: 100%;
     background-repeat: no-repeat;
+    width: 100%;
 	
 }
 .nn{
 	display: flex;
 	margin-top: 138px;
 	justify-content: space-between;
-
+	flex-wrap:wrap;
 
 }
 .pilesos{
-	font-size: 34px;
+    font-size: 34px;
     color: white;
     text-align: right;
     font-family: "Open Sans";
     line-height: 32px;
     margin-top: 70px;
-    width: 262px;
+    max-width: 262px;
+    width: 100%;
 
 }
 .krolik{
-	    font-size: 18px;
+    font-size: 18px;
     color: white;
     text-align: right;
     font-family: "Open Sans";
@@ -77,9 +81,10 @@ background-image: url(Images/Image.png);
     color: white;
     text-align: right;
     font-family: "Open Sans";
-    width: 340px;
+    max-width: 340px;
     margin-top: 16px;
     font-size: 14px;
+    width: 100%;
 }
 .brain a{
 	color: white;	
@@ -91,12 +96,13 @@ background-image: url(Images/Image.png);
 	
 }
 .BS{
-	height: 348px;
+	min-height: 348px;
 	display: flex;
 	flex-direction: column;
-	width: 340px;
+	max-width: 340px;
 	align-items: end;
 	justify-content: space-between;
+	width: 100%;
 
 }
 .BS a{
@@ -119,9 +125,10 @@ background-image: url(Images/Image.png);
 
 }
 .yarick{
-	width: 459px;
+	max-width: 459px;
 	margin-top: 100px;
-	height: 513px;
+	min-height: 513px;
+	width: 100%;
 }
 .sas{
 	color: black;
@@ -130,12 +137,14 @@ background-image: url(Images/Image.png);
 	padding-left: 4px;
 }
 .def{
-	width: 77px;
+	max-width: 77px;
 	margin-bottom: 30px;
+	width: 100%;
 }
 .penchi{
-	width: 130px;
+	
 	margin-top: 217px;
+	width: 100%;
 
 }
 .maksim{
@@ -143,12 +152,68 @@ background-image: url(Images/Image.png);
 	background: rgba(255, 255, 255, .15);
 	border-radius: 6px;
 	padding-left: 4px;
+	width: 151px;
 }
 .aralash{
 	color: white;
-	width: 437px;
+	max-width: 437px;
 	margin-top: 20px;
+	width: 100%;
 }
 .abaydno{
-	height: 20px;
+	min-height: 20px;
+}
+ 
+
+
+
+
+@media(max-width:720px){
+	header ul{
+		display: none;
+	}
+	.btn{
+	width: 30px;
+	height: 30px;
+	border: solid 1px white;
+
+}
+	.btn1{
+	width: 15px;
+	height: 2px;
+	background-color: white;
+	margin-top: 5px;
+	margin-left: 7px;
+}
+.btn2{
+	width: 15px;
+	height: 2px;
+	background-color: white;
+	margin-top: 5px;
+	margin-left: 7px;
+}
+.btn3{
+	width: 15px;
+	height: 2px;
+	background-color: white;
+	margin-top: 5px;
+	margin-left: 7px;
+}
+.nn{
+	justify-content: center;
+	padding: 20px;
+}
+.BS a{
+	margin-top: 30px;
+}
+.yarick{
+	padding: 20px;
+}
+.aralash{
+	padding: 20px;
+}
+.maksim{
+
+	padding: 20px;
+}
 }
